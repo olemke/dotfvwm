@@ -49,7 +49,7 @@ AddToMenu   Utilities "Root Menu" Title
 + "Fvwm &Modules%mini.modules.xpm%"	Popup Module-Popup
 + "&Settings%mini.desktop.xpm%"		Popup Settings
 + "&Documents%mini.books.xpm%"		Popup Documents
-+ "&Screen Saver%mini.display.xpm%"	Popup Screen
+#+ "&Screen Saver%mini.display.xpm%"	Popup Screen
 + ""					Nop
 + "&Restart%mini.turn.xpm%"		Popup Restart
 + "&Quit fvwm%mini.stop.xpm%"		FvwmForm FvwmForm-QuitVerify
@@ -80,7 +80,7 @@ AddToFunc   SetDebianMenu
 + I + "&Settings%mini.desktop.xpm%"	Popup Settings
 + I + "&Documents%mini.books.xpm%"	Popup Documents
 + I + "&Help%mini.book1.xpm%"		Popup /Debian/Help
-+ I + "&Screen Saver%mini.display.xpm%"	Popup /Debian/Screen
+#+ I + "&Screen Saver%mini.display.xpm%"	Popup /Debian/Screen
 + I + ""				Nop
 + I + "&Window Managers%mini.x2.xpm%"	Popup /Debian/WindowManagers
 + I + "&Restart%mini.turn.xpm%"		Restart
@@ -183,7 +183,7 @@ AddToMenu   Accessories
 #+ "&View colormap%mini.colors.xpm%"	Exec exec xcolormap
 #+ "&Color viewer%mini.colors.xpm%"	Exec exec xcolorsel
 + "&Capture Form%mini.camera.xpm%"	FvwmForm FvwmForm-Capture
-+ "&Screen Dump Script%mini.camera.xpm%" FvwmScript FvwmScript-ScreenDump
+#+ "&Screen Dump Script%mini.camera.xpm%" FvwmScript FvwmScript-ScreenDump
 #+ "X&grab%mini.camera.xpm%"		Exec exec xgrab
 + "&Ddd%mini.bug2.xpm%"		        Exec exec ddd
 + "Xx&gdb%mini.bug2.xpm%"		Exec exec xxgdb
@@ -419,7 +419,7 @@ AddToMenu   Settings
 + "&Mouse Speed%mini.cat.xpm%"			Popup Mouse-Settings
 + "&Keyboard%mini.keyboard.xpm%"		Popup Keyboard-Settings
 + "&Bell%mini.audiovol.xpm%"			Popup Bell-Settings
-+ "&Screen%mini.monitor.xpm%"			Popup X-settings
+#+ "&Screen%mini.monitor.xpm%"			Popup X-settings
 
 #------------------------------------------------------------------------------
 #--------- Fvwm Config
@@ -647,7 +647,7 @@ DestroyMenu XsetupScripts
 AddToMenu   XsetupScripts
 + "&Bell%mini.audiovol.xpm%"		FvwmScript FvwmScript-BellSetup
 + "&KeyBoard%mini.keyboard.xpm%"	FvwmScript FvwmScript-KeyboardSetup
-+ "&Screen%mini.monitor.xpm%"		FvwmScript FvwmScript-ScreenSetup
+#+ "&Screen%mini.monitor.xpm%"		FvwmScript FvwmScript-ScreenSetup
 + "&Mouse%mini.mouse.xpm%"		FvwmScript FvwmScript-PointerSetup
 
 #------------------------------------------------------------------------------
