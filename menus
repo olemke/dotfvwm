@@ -67,8 +67,8 @@ AddToFunc   SetDebianMenu
 #+ I + "&File Manager%mini.filemgr.xpm%"	Exec exec xfm
 + I + "&Top%mini.run.xpm%"		Exec exec xterm -geometry 80x40	-T Top -n Top -e top
 + I + ""				Nop
-+ I + "&Programs%mini.start.xpm%"	Popup /Debian/Apps
-+ I + ""				Nop
+#+ I + "&Programs%mini.start.xpm%"	Popup /Debian/Apps
+#+ I + ""				Nop
 + I + "&Fvwm Modules%mini.modules.xpm%"	Popup Module-Popup
 + I + "&Settings%mini.desktop.xpm%"	Popup Settings
 + I + "&Documents%mini.books.xpm%"	Popup Documents
