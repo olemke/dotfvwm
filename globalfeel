@@ -47,7 +47,7 @@ EdgeThickness 1
 # The focus policy. Once you are used to clicking *inside* windows to
 # raise them you will not want to lose this feature.
 #
-Style * SloppyFocus
+Style * ClickToFocus
 Style * MouseFocusClickRaises
 
 #
