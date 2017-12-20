@@ -10,8 +10,15 @@
 
 DestroyMenu StartMenu
 AddToMenu   StartMenu@side.fvwm2.xpm@^black^
++ "&Terminal%mini.term.xpm%"	Exec exec x-terminal-emulator
++ "&Spyder%mini.term.xpm%"		Exec exec spyder
++ "&PyCharm Pro%mini.term.xpm%"	Exec exec /scratch/uni/u237/sw/pycharm-pro/bin/pycharm.sh
++ "&PyCharm Community%mini.term.xpm%"	Exec exec /scratch/uni/u237/sw/pycharm/bin/pycharm.sh
++ "&Matlab%mini.term.xpm%"		Exec exec matlab -desktop
++ "&Editor%mini.edit.xpm%"		Exec exec gvim
++ "" Nop
 + "&Programs%programs.xpm%"	Popup Programs
-+ "&Documents%documents.xpm%"	Popup Documents
+#+ "&Documents%documents.xpm%"	Popup Documents
 + "&Settings%settings.xpm%"	Popup Settings
 + "" Nop
 Test (f /etc/X11/fvwm/menudefs.hook) + "&Debian Menu%programs.xpm%" Popup /Debian
