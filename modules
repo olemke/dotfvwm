@@ -398,14 +398,14 @@ DestroyModuleConfig FvwmDesker: *
 #------------------------------------------------------------------------------
 
 Style "FvwmTaskBar" !Title, !Handles, Sticky, WindowListSkip, \
-	CirculateSkip, TitleAtBottom
+	CirculateSkip, TitleAtBottom, BorderWidth 0
 # Note: Title at bottom is for shading.
 
 *FvwmTaskBar: Geometry +0-0
 *FvwmTaskBar: Fore Black
-*FvwmTaskBar: Back #c0c0c0
+*FvwmTaskBar: Back grey80
 *FvwmTaskBar: IconFore Black
-*FvwmTaskBar: IconBack grey51
+*FvwmTaskBar: IconBack grey80
 *FvwmTaskBar: Font "xft:sans-serif:Medium:pixelsize=12;-adobe-times-medium-r-*-*-14-*-*-*-*-*-*-*"
 *FvwmTaskBar: SelFont "xft:sans-serif:Bold:pixelsize=12;-adobe-times-bold-r-*-*-14-*-*-*-*-*-*-*"
 *FvwmTaskBar: StatusFont "xft:sans-serif:Medium:pixelsize=12;*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*"
@@ -418,9 +418,10 @@ Style "FvwmTaskBar" !Title, !Handles, Sticky, WindowListSkip, \
 *FvwmTaskBar: StartMenu StartMenu mouse -100p -100m
 *FvwmTaskBar: StartIcon mini.penguin.xpm
 *FvwmTaskBar: ShowTips
+*FvwmTaskBar: 3DFvwm
 *FvwmTaskBar: ShowTransients
 #*FvwmTaskBar: HighlightFocus
-*FvwmTaskBar: AutoHide
+#*FvwmTaskBar: AutoHide
 *FvwmTaskBar: DeskOnly
 *FvwmTaskBar: NoIconAction SendToModule FvwmAnimate animate
 
