@@ -10,7 +10,6 @@
 
 DestroyMenu StartMenu
 AddToMenu   StartMenu@side.fvwm2.xpm@^black^
-+ "&Shells%shells.xpm%"		Popup Shells
 + "&Programs%programs.xpm%"	Popup Programs
 + "&Documents%documents.xpm%"	Popup Documents
 + "&Settings%settings.xpm%"	Popup Settings
@@ -38,7 +37,6 @@ AddToMenu   Utilities "Root Menu" Title
 #+ "&File Manager%mini.filemgr.xpm%"	Exec exec xfm
 + "&Top%mini.run.xpm%"			Exec exec xterm -geometry 80x40	-T Top -n Top -e top
 + ""					Nop
-+ "&Shells%mini.term.xpm%"		Popup Shells
 + "&Programs%mini.start.xpm%"		Popup Programs
 + ""					Nop
 + "Fvwm &Modules%mini.modules.xpm%"	Popup Module-Popup
@@ -61,11 +59,14 @@ AddToFunc   SetDebianMenu
 + I AddToMenu   Utilities "Root Menu" Title
 #PREF 3
 + I + "&Terminal%mini.term.xpm%"	Exec exec x-terminal-emulator
++ I + "&Spyder%mini.term.xpm%"		Exec exec spyder
++ I + "&PyCharm Pro%mini.term.xpm%"	Exec exec /scratch/uni/u237/sw/pycharm-pro/bin/pycharm.sh
++ I + "&PyCharm Community%mini.term.xpm%"	Exec exec /scratch/uni/u237/sw/pycharm/bin/pycharm.sh
++ I + "&Matlab%mini.term.xpm%"		Exec exec matlab -desktop
 + I + "&Editor%mini.edit.xpm%"		Exec exec gvim
 #+ I + "&File Manager%mini.filemgr.xpm%"	Exec exec xfm
 + I + "&Top%mini.run.xpm%"		Exec exec xterm -geometry 80x40	-T Top -n Top -e top
 + I + ""				Nop
-+ I + "&Shells%mini.term.xpm%"		Popup /Debian/XShells
 + I + "&Programs%mini.start.xpm%"	Popup /Debian/Apps
 + I + ""				Nop
 + I + "&Fvwm Modules%mini.modules.xpm%"	Popup Module-Popup
@@ -79,37 +80,6 @@ AddToFunc   SetDebianMenu
 + I + "&Quit fvwm%mini.stop.xpm%"	FvwmForm FvwmForm-QuitVerify
 
 Test (f /etc/X11/fvwm/menudefs.hook) SetDebianMenu
-
-#------------------------------------------------------------------------------
-#--------- SHELLS
-#------------------------------------------------------------------------------
-DestroyMenu Shells
-AddToMenu   Shells
-+ "&Xterm	default%mini.term.xpm%" Exec exec xterm
-+ "Xterm/&root	default%mini.term.xpm%" Exec exec xterm -fg violet -bg black -e su -l
-#+ "&NXterm	default%mini.term.xpm%" Exec exec nxterm
-#+ "&Rxvt	default%mini.term.xpm%" Exec exec rxvt
-+ "&Eterm	default%mini.term.xpm%" Exec exec Eterm
-#+ "X&iterm	default%mini.term.xpm%" Exec exec xiterm
-#+ "&Aterm	default%mini.term.xpm%" Exec exec aterm
-#+ "&GNOME Term	default%mini.term.xpm%" Exec exec gnome-terminal
-#+ "&Konsole	default%mini.term.xpm%" Exec exec konsole
-#+ "&Kvt 	default%mini.term.xpm%" Exec exec kvt
-#+ "&Dtterm	default%mini.term.xpm%" Exec exec /usr/bin/dtterm
-+ ""                                                Nop
-+ "&Xterm	80x40 (7x14 font)%mini.term.xpm%" Exec exec xterm  -n $USER@$HOST -T $USER@$HOST -g 80x40 -sb +sk +si -sl 4096 -j -ls -fn 7x14 -fb 7x14bold
-+ "Xterm/r&oot	80x40 (7x14 font)%mini.term.xpm%" Exec exec xterm  -n root@$HOST  -T root@$HOST  -g 80x40 -sb +sk +si -sl 4096 -j -ls -fn 7x14 -fb 7x14bold -fg violet -bg black -e su -l
-#+ "&NXterm	80x40 (7x14 font)%mini.term.xpm%" Exec exec nxterm -n $USER@$HOST -T $USER@$HOST -g 80x40 -sb +sk +si -sl 4096 -j -ls -fn 7x14 -fb 7x14bold
-#+ "&Rxvt 	80x40 (7x14 font)%mini.term.xpm%" Exec exec rxvt   -n $USER@$HOST -T $USER@$HOST -g 80x40 --loginShell -fn 7x14 -fb 7x14bold
-+ "&Eterm	80x40 (7x14 font)%mini.term.xpm%" Exec exec Eterm  -n $USER@$HOST -T $USER@$HOST -g 80x40 --login-shell --font 7x14 --bold-font 7x14bold
-#+ "X&iterm 	80x40 (7x14 font)%mini.term.xpm%" Exec exec xiterm -n $USER@$HOST -T $USER@$HOST -g 80x40 -sb +sk +si -sl 4096 -ls -fn 7x14 -fb 7x14bold
-#+ "&Aterm	80x40 (7x14 font)%mini.term.xpm%" Exec exec aterm  -n $USER@$HOST -T $USER@$HOST -g 80x40 -sb +sk +si -sl 4096 -ls -fn 7x14 -fb 7x14bold
-#+ "&GNOME Term	80x40 (7x14 font)%mini.term.xpm%" Exec exec gnome-terminal --title=$USER@$HOST --geometry=80x40 --login --font=7x14
-#+ "&Kvt 	80x40 (7x14 font)%mini.term.xpm%" Exec exec kvt    -n $USER@$HOST -T $USER@$HOST -vt_geometry 80x40 -sl 4096 -ls -vt_font 7x14
-#+ "&Konsole	80x40%mini.term.xpm%"             Exec exec konsole -nowelcome -sl 4096 -ls -vt_sz 80x40
-#+ "&Dtterm	80x40 (7x14 font)%mini.term.xpm%" Exec exec /usr/dt/bin/dtterm -n $USER@$HOST -T $USER@$HOST -sl 4096 -ls -g 80x40 -fn 7x14 -fb 7x14bold
-+ ""						Nop
-+ "Remote &login	...%mini.connect.xpm%"		FvwmForm FvwmForm-Rlogin
 
 #------------------------------------------------------------------------------
 #--------- Programs
